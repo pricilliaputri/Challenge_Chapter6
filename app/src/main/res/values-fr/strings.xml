@@ -12,7 +12,6 @@
     <string name="hello" tools:ignore="UnusedResources">Bonjour!</string>
     <string name="home">domicile</string>
     <string name="detail">détail</string>
-    <string name="textview">Mode texte</string>
     <string name="enter_email">Entrez l’adresse e-mail</string>
     <string name="enter_password">Entrez le mot de passe</string>
     <string name="profile">profil</string>
@@ -25,4 +24,5 @@
     <string name="confirm_password">Confirmer le mot de passe</string>
     <string name="movie_title">Titre du film</string>
     <string name="movie_release">Sortie du film</string>
+    <string name="login_here">Connectez-vous ici!</string>
 </resources>

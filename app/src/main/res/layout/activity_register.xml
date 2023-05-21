@@ -103,7 +103,6 @@
         >
 
         <EditText
-            android:id="@+id/cPass"
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:backgroundTint="#DEFDE1"
