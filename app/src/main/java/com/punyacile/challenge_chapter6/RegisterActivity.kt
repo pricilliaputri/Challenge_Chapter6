@@ -22,7 +22,7 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         auth = FirebaseAuth.getInstance()
-        pref = this.getSharedPreferences("data_reg", Context.MODE_PRIVATE)
+        pref = this.getSharedPreferences("data", Context.MODE_PRIVATE)
 
         binding.registerLogin.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))

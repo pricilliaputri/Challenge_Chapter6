@@ -19,7 +19,7 @@ class ProfileActivity : AppCompatActivity() {
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        sharedPreferences = this.getSharedPreferences("data_acc", Context.MODE_PRIVATE)
+        sharedPreferences = this.getSharedPreferences("data", Context.MODE_PRIVATE)
 
         binding.btnUpdate.setOnClickListener {
             val getUsername = binding.user.text.toString()
