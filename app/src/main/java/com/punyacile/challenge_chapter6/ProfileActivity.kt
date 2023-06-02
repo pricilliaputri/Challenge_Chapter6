@@ -10,9 +10,9 @@ import com.google.firebase.auth.FirebaseAuth
 import com.punyacile.challenge_chapter6.databinding.ActivityProfileBinding
 
 class ProfileActivity : AppCompatActivity() {
-    lateinit var binding: ActivityProfileBinding
-    lateinit var sharedPreferences: SharedPreferences
-    lateinit var auth: FirebaseAuth
+    private lateinit var binding: ActivityProfileBinding
+    private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -8,7 +8,6 @@
     <string name="welcome">Bonjour, bienvenue!</string>
     <string name="already" tools:ignore="UnusedResources">Déjà inscrit? Connexion!</string>
     <string name="not_registered">Vous n’êtes pas encore inscrit? S’enregistrer!</string>
-    <string name="not_yet" tools:ignore="UnusedResources">Vous n’êtes pas encore inscrit? S’enregistrer!</string>
     <string name="hello" tools:ignore="UnusedResources">Bonjour!</string>
     <string name="home">domicile</string>
     <string name="detail">détail</string>

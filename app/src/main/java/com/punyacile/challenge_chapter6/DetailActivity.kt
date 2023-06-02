@@ -15,7 +15,7 @@ import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 
-@Suppress("DEPRECATION")
+@Suppress("DEPRECATION", "DeferredResultUnused")
 @AndroidEntryPoint
 class DetailActivity : AppCompatActivity(), MovieAdapter.OnItemClickListener {
     private lateinit var binding: ActivityDetailBinding

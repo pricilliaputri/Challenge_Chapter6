@@ -1,27 +1,45 @@
 package com.punyacile.challenge_chapter6
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Patterns
+import android.view.ViewGroup
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.punyacile.challenge_chapter6.databinding.ActivityMainBinding
 
+@Suppress(
+    "MemberVisibilityCanBePrivate"
+)
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
-    private lateinit var auth: FirebaseAuth
-    private lateinit var pref: SharedPreferences
+     lateinit var binding: ActivityMainBinding
+     lateinit var auth: FirebaseAuth
+     lateinit var pref: SharedPreferences
 
 
+
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         pref = this.getSharedPreferences("data_reg", Context.MODE_PRIVATE)
+
+        val crashButton = Button(this)
+        crashButton.text = "Test Crash"
+        crashButton.setOnClickListener {
+            throw RuntimeException("Test Crash") // Force a crash
+        }
+
+        addContentView(crashButton, ViewGroup.LayoutParams(
+            ViewGroup.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT))
 
 
         binding.register.setOnClickListener {

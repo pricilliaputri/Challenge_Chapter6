@@ -13,6 +13,7 @@ import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 
+@Suppress("DeferredResultUnused")
 class FavoriteAdapter(private var listFavorite: List<DataFavoriteMovie>?, private val listener: OnItemClickListener) :
     RecyclerView.Adapter<FavoriteAdapter.ViewHolder>() {
 

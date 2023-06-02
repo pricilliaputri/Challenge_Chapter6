@@ -9,7 +9,7 @@
     <string name="hello_blank_fragment" translatable="false" tools:ignore="UnusedResources">Hello blank fragment</string>
     <string name="already" tools:ignore="UnusedResources">Already Registered? Sign In!</string>
     <string name="not_registered">Not Registered Yet? Sign Up!</string>
-    <string name="not_yet" tools:ignore="UnusedResources">Not Registered Yet? Sign Up!</string>
+<!--    <string name="not_yet" tools:ignore="UnusedResources">Not Registered Yet? Sign Up!</string>-->
     <string name="hello" tools:ignore="UnusedResources">Hello</string>
     <string name="home">Home</string>
     <string name="deskripsi_disini" translatable="false">Deskripsi disini</string>
